@@ -1,90 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdurahman bin Ashraf </title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            overflow: hidden;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body, html, #app {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #app {
+      overflow: hidden;
+      touch-action: pan-up;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
 
-        /* Particles Background */
-        #particles-js {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
+    #app h1 {
+      --fontSize: 60px;
+      --lineHeight: 80px;
+      width: auto;
+      height: calc(2 * var(--lineHeight));
+      line-height: var(--lineHeight);
+      margin: calc(50vh - var(--lineHeight)) auto 0;
+      font-size: var(--fontSize);
+      text-transform: uppercase;
+    }
 
-        /* Rest of the Vibrant Theme CSS */
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            background-color: #ff2d55; /* Vivid Red */
-            color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    #app a {
+      margin-top: 10px;
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+    }
 
-        .name {
-            font-size: 36px;
-            font-weight: bold;
-        }
-
-        .contact-info {
-            font-size: 20px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .section-title {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ff6347; /* Tomato */
-            margin-bottom: 10px;
-        }
-        .section-content {
-            font-size: 18px;
-            color: #333333;
-        }
-
-        /* Animation */
-        .fade-in {
-            animation: fadeInAnimation 1s ease-in;
-            animation-fill-mode: forwards;
-        }
-        @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .photo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .photo img {
-            width: 200px;
-            border-radius: 50%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-        }
-        .social-icons {
+    #app canvas {
+      display: block;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+    }
+    }
+    .social-icons {
             text-align: center;
             margin-top: 10px;
         }
@@ -93,48 +52,65 @@
             margin: 5px;
             font-size: 24px;
         }
-    </style>
+  </style>
 </head>
 <body>
-    
-     <div id="particles-js"></div>
-
-    <!-- Rest of your resume content -->
-    <div class="header fade-in">
-        <div class="name">Abdurahman bin Ashraf </div>
-        <div class="contact-info">
-            <i class="fas fa-envelope"></i> abdurahmanbinashraf33@gmail.com &nbsp;|&nbsp;
-            <i class="fas fa-phone"></i> &nbsp;|&nbsp;
-            <i class="fas fa-map-marker-alt"></i> Tirur, Kerala , India 
-        </div>
-    </div>
- <div class="photo fade-in">
-        <img src="https://drive.google.com/file/d/1W9RZ-QLJMX3k2MKCd6fT4xQGasBA3FI1/view?usp=drivesdk" alt="Abdurahman bin Ashraf ">
-    </div><br>
-    <div class="section fade-in">
-        <div class="section-title">Education</div>
-        <div class="section-content">
-            <strong>12th Standard, Computer Science</strong><br>
-            <b><i>Devadhar GHSS Tanur,Tanur,Kerala,India</b></i> <br>
-          <b><h2>Still continuing.... </h2></b>
-        </div>
-    </div>
-<div class="section fade-in">
-    <div class="section-title">Hobbies</div>
-    <div class="section-content"><b>•Digital marketing </b> <br> <b>•Video Creating </b><br><b>•YouTube, Instagram Content Creating </b></div>
-    </div>
-    <div class="section fade-in">
-    <div class="section-title">Skills</div>
-    <div class="section-content">
-        <b>•HTML Bacics</b><br><b>•Coming soon... </b>
-    </div>
-    </div></div>
-    
-   <div class="social-icons fade-in">
+  <div id="app">
+    <div id="hero">
+      <h2>👉Abdurahman bin Ashraf👈</h2><a href="https://instagram.com/abdu_rahman__007?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">by Abdu_rahman__007</a>
+      <div class="social-icons fade-in">
         <a href="https://instagram.com/abdu_rahman__007?igshid=MzNlNGNkZWQ4Mg== target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://youtube.com/@AncestralAnomalies" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://youtube.com/@AncestralAnomalies" target="_blank"><i class="fab fa-youtube"></i></a></div></p>
+    
     </div>
-    <!-- Add more sections here with class="section fade-in" -->
+    
+    <!-- Add your student resume content here -->
+    <div class="resume-section">
+      <h2>About Me</h2>
+      <p>I am a passionate computer science student with a strong interest in programming and technology.</p>
+    </div>
+    <div class="resume-section">
+      <h2>Education</h2>
+      <p>▫️12th Standard, Computer Science <br> ▫️Devadhar GHSS Tanur, Tanur, Kerala , India<br> ▫️Expected Year of Graduation: 2023-2024</p>
+    </div>
+    <div class="resume-section">
+      <h2>Still Continuing Education</h2>
+      <p>▫️12th Standard, Computer Science <br> ▫️Devadhar GHSS Tanur, Tanur, Kerala , India<br> ▫️Entrolled in:2017-Present</p>
+    </div>
+    <div class="resume-section"><h2>Skills</h2>
+<p>🎯Html<br>🎯More Loading...</p>
+    <!-- Add more resume sections as needed -->
 
+    <!-- Add additional content to make the resume scrollable -->
+    <!-- For example, add more resume sections, work experience, skills, etc. -->
+    <div class="resume-section">
+      <h2>Some Works<br>Here👇</h2>
+      <p>👉YouTube Channel-Ancestral Anomalies</p>
+      <p>👉Instagram-@abdu_rahman__007<div class="social-icons fade-in">
+        <a href="https://instagram.com/abdu_rahman__007?igshid=MzNlNGNkZWQ4Mg== target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/@AncestralAnomalies" target="_blank"><i class="fab fa-youtube"></i></a></div></p>
+    </div>
+
+  
+
+  </div>
+
+  <script type="module">
+    import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js';
+
+    neonCursor({
+      el: document.getElementById('app'),
+      shaderPoints: 16,
+      curvePoints: 80,
+      curveLerp: 0.5,
+      radius1: 5,
+      radius2: 30,
+      velocityTreshold: 10,
+      sleepRadiusX: 100,
+      sleepRadiusY: 100,
+      sleepTimeCoefX: 0.0025,
+      sleepTimeCoefY: 0.0025
+    });
+  </script>
 </body>
 </html>
